@@ -41,5 +41,28 @@ extension Connection {
         }
     }
     
+    public func requestForumPosts(completion: @escaping (Result<[String: AnyObject]>) -> Void) {
+        
+        requestJSON(url: HubchatAPI.ForumPhotographyPostsURL) { result in
+            
+            switch result {
+                
+            case let .Failure(error):
+                
+                return completion(.Failure(error))
+                
+            case let .Success(object):
+                
+                guard let object = object as? [String: AnyObject] else {
+                    
+                    return completion(.Failure(ConnectionError.responseNotJSON))
+                }
+                
+                completion(.Success(object))
+                break
+            }
+        }
+    }
+
 }
 

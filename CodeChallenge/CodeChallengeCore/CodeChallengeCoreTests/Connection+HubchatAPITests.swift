@@ -21,7 +21,7 @@ class Connection_HubchatAPITests: XCTestCase {
     
     //  MARK : Forum Info
     
-    func testThatItGetsForumJSON() {
+    func testThatItGetsForumInfoJSON() {
         
         //  Given
         let completionExpectation = expectation(description: "Connection performs async request")
@@ -51,5 +51,35 @@ class Connection_HubchatAPITests: XCTestCase {
             }
         }
     }
-
+    
+    func testThatItGetsForumPostsJSON() {
+        
+        //  Given
+        let completionExpectation = expectation(description: "Connection performs async request")
+        
+        //  When
+        Connection().requestForumPosts() { result in
+            
+            switch result {
+                
+            case let .Success(object):
+                //  Then
+                XCTAssertNotNil(object)
+                break
+                
+            default:
+                XCTFail("testThatItGetsForumPostsJSON-error")
+                break
+            }
+            
+            completionExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0) { error in
+            
+            if let error = error {
+                XCTFail("testThatItGetsForumPostsJSON error: \(error)")
+            }
+        }
+    }
 }
