@@ -1,5 +1,5 @@
 //
-//  CodeChallengeCoreTests.swift
+//  ConnectionManagerTests.swift
 //  CodeChallengeCoreTests
 //
 //  Created by Jose Torres on 7/1/17.

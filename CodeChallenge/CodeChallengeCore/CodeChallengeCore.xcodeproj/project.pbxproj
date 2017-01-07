@@ -10,8 +10,9 @@
 		0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744991E216A380059B89C /* Alamofire.framework */; };
 		0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
 		084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */; };
+		084744E31E2190DF0059B89C /* Connection+HubchatAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
-		08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */; };
+		08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* ConnectionManagerTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08754F381E2132230037134B /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F371E2132230037134B /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
@@ -30,11 +31,12 @@
 		084744991E216A380059B89C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0847449A1E216A380059B89C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPI.swift"; sourceTree = "<group>"; };
+		084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPITests.swift"; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08754F0B1E2124FC0037134B /* CodeChallengeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallengeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeCoreTests.swift; sourceTree = "<group>"; };
+		08754F101E2124FC0037134B /* ConnectionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTests.swift; sourceTree = "<group>"; };
 		08754F121E2124FC0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08754F371E2132230037134B /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,7 +94,8 @@
 		08754F0F1E2124FC0037134B /* CodeChallengeCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */,
+				08754F101E2124FC0037134B /* ConnectionManagerTests.swift */,
+				084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */,
 				08754F121E2124FC0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCoreTests;
@@ -272,7 +275,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */,
+				084744E31E2190DF0059B89C /* Connection+HubchatAPITests.swift in Sources */,
+				08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
