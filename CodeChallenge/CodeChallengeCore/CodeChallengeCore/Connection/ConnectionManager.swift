@@ -8,11 +8,18 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 public enum Result<T> {
     
     case Failure(Error)
     case Success(T)
+}
+
+/// Protocol required for Models used in Connection
+protocol ConnectionParseable {
+    
+    init?(json: JSON)
 }
 
 /// Enum of possible ConnectionError-s
@@ -22,6 +29,7 @@ public enum Result<T> {
 enum ConnectionError: Error {
     
     case responseNotJSON
+    case responseConvertionToModelFailed
     case unkwnon
 }
 
@@ -49,6 +57,35 @@ public struct Connection {
             }
             
             completion(.Success(responseJSON as AnyObject))
+        }
+    }
+    
+    /// Internal generic response-type request method. Currently only supporting GET requests.
+    ///
+    /// - Parameters:
+    ///   - url: String request url.
+    ///   - completion: Completion closure with generic response-type.
+    func requestJSON<T: ConnectionParseable>(url: String, completion: @escaping (Result<T>) -> Void) {
+        
+        requestJSON(url: url) { result in
+            
+            switch result {
+                
+            case let .Failure(error):
+                
+                return completion(.Failure(error))
+                
+            case let .Success(object):
+                
+                let json = JSON(object)
+                guard let object = T(json: json) else {
+                    
+                    return completion(.Failure(ConnectionError.responseConvertionToModelFailed))
+                }
+                
+                completion(.Success(object))
+                break
+            }
         }
     }
 }
