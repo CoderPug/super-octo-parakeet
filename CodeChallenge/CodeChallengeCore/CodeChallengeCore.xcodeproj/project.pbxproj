@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744991E216A380059B89C /* Alamofire.framework */; };
+		0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
 		08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08754F381E2132230037134B /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F371E2132230037134B /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +26,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084744991E216A380059B89C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0847449A1E216A380059B89C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08754F0B1E2124FC0037134B /* CodeChallengeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallengeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeCoreTests.swift; sourceTree = "<group>"; };
 		08754F121E2124FC0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08754F371E2132230037134B /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */,
+				0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +64,7 @@
 				08754F041E2124FB0037134B /* CodeChallengeCore */,
 				08754F0F1E2124FC0037134B /* CodeChallengeCoreTests */,
 				08754F031E2124FB0037134B /* Products */,
+				08754F3A1E21351A0037134B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				08754F051E2124FB0037134B /* CodeChallengeCore.h */,
+				08754F361E2132230037134B /* Connection */,
 				08754F061E2124FB0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCore;
@@ -84,6 +94,23 @@
 				08754F121E2124FC0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCoreTests;
+			sourceTree = "<group>";
+		};
+		08754F361E2132230037134B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				08754F371E2132230037134B /* ConnectionManager.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		08754F3A1E21351A0037134B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084744991E216A380059B89C /* Alamofire.framework */,
+				0847449A1E216A380059B89C /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08754F161E2124FC0037134B /* Build configuration list for PBXNativeTarget "CodeChallengeCore" */;
 			buildPhases = (
+				0E0BC893FE2ABEE628C5FBAD /* [CP] Check Pods Manifest.lock */,
 				08754EFD1E2124FB0037134B /* Sources */,
 				08754EFE1E2124FB0037134B /* Frameworks */,
 				08754EFF1E2124FB0037134B /* Headers */,
 				08754F001E2124FB0037134B /* Resources */,
+				0847449D1E216A490059B89C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -122,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08754F191E2124FC0037134B /* Build configuration list for PBXNativeTarget "CodeChallengeCoreTests" */;
 			buildPhases = (
+				758BD9C8A7A62AD016C162F3 /* [CP] Check Pods Manifest.lock */,
 				08754F071E2124FC0037134B /* Sources */,
 				08754F081E2124FC0037134B /* Frameworks */,
 				08754F091E2124FC0037134B /* Resources */,
+				7BAAA0AA4594AFF074324AA2 /* [CP] Embed Pods Frameworks */,
+				DFFB93EB41CD13A2F5A82176 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +181,7 @@
 					08754F011E2124FB0037134B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7QN6NJ95ZV;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					08754F0A1E2124FC0037134B = {
@@ -192,11 +225,90 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0847449D1E216A490059B89C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		0E0BC893FE2ABEE628C5FBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+		758BD9C8A7A62AD016C162F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7BAAA0AA4594AFF074324AA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeCoreTests/Pods-CodeChallengeCoreTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFFB93EB41CD13A2F5A82176 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeCoreTests/Pods-CodeChallengeCoreTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08754EFD1E2124FB0037134B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08754F381E2132230037134B /* ConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -276,6 +389,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -321,6 +435,8 @@
 		08754F171E2124FC0037134B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -328,6 +444,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -335,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +463,8 @@
 		08754F181E2124FC0037134B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -349,6 +472,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -363,6 +490,7 @@
 		08754F1A1E2124FC0037134B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;
@@ -374,6 +502,7 @@
 		08754F1B1E2124FC0037134B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;
