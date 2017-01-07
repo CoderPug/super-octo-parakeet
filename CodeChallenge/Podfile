@@ -1,0 +1,23 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '9.0'
+
+def project_pods
+    pod 'Alamofire', '4.2.0'
+    pod 'SnapKit', '~> 3.0'
+    pod 'SwiftyJSON', '3.1.3'
+end
+
+target 'CodeChallenge' do
+  # Comment this line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CodeChallenge
+  project_pods
+    
+  target 'CodeChallengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+    project_pods
+  end
+
+end
