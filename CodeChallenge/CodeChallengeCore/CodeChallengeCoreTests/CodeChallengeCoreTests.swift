@@ -13,24 +13,77 @@ class CodeChallengeCoreTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testThatItGetsJSONFromCorrectURL() {
+        
+        //  Given
+        let url = "https://api.hubchat.com/v1/forum/photography"
+        
+        let completionExpectation = expectation(description: "Connection performs async request")
+        
+        //  When
+        Connection().requestJSON(url: url) { result in
+            
+            switch result {
+                
+            case let .Success(object):
+                //  Then
+                XCTAssertNotNil(object)
+                XCTAssert((object as? [String: AnyObject]) != nil)
+                break
+
+            default:
+                XCTFail("testThatItGetsJSONFromCorrectURL-error")
+                break
+            }
+            
+            completionExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0) { error in
+            
+            if let error = error {
+                XCTFail("testThatItGetsJSONFromCorrectURL error: \(error)")
+            }
         }
     }
     
+    func testThatItGetsJSONParsingErrorFromWrongURL() {
+        
+        //  Given
+        let url = "https://www.hubchat.com/"
+        
+        let completionExpectation = expectation(description: "Connection performs async request")
+        
+        //  When
+        Connection().requestJSON(url: url) { result in
+            
+            switch result {
+                
+            case let .Failure(error):
+                //  Then
+                XCTAssertNotNil(error)
+                XCTAssert(error as? ConnectionError == ConnectionError.responseNotJSON)
+                
+            default:
+                XCTFail("testThatItGetsJSONParsingErrorFromWrongURL-error")
+                break
+            }
+            
+            completionExpectation.fulfill()
+        }
+        
+        waitForExpectations(timeout: 5.0) { error in
+            
+            if let error = error {
+                XCTFail("testThatItGetsJSONParsingErrorFromWrongURL error: \(error)")
+            }
+        }
+    }
+
 }

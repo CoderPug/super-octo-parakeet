@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744991E216A380059B89C /* Alamofire.framework */; };
 		0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
+		084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
 		08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		084744991E216A380059B89C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		0847449A1E216A380059B89C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPI.swift"; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				08754F371E2132230037134B /* ConnectionManager.swift */,
+				084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */,
 			);
 			path = Connection;
 			sourceTree = "<group>";
@@ -151,12 +154,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08754F191E2124FC0037134B /* Build configuration list for PBXNativeTarget "CodeChallengeCoreTests" */;
 			buildPhases = (
-				758BD9C8A7A62AD016C162F3 /* [CP] Check Pods Manifest.lock */,
 				08754F071E2124FC0037134B /* Sources */,
 				08754F081E2124FC0037134B /* Frameworks */,
 				08754F091E2124FC0037134B /* Resources */,
-				7BAAA0AA4594AFF074324AA2 /* [CP] Embed Pods Frameworks */,
-				DFFB93EB41CD13A2F5A82176 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,7 +186,7 @@
 					};
 					08754F0A1E2124FC0037134B = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -256,51 +256,6 @@
 			shellScript = "";
 			showEnvVarsInLog = 0;
 		};
-		758BD9C8A7A62AD016C162F3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		7BAAA0AA4594AFF074324AA2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeCoreTests/Pods-CodeChallengeCoreTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DFFB93EB41CD13A2F5A82176 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeCoreTests/Pods-CodeChallengeCoreTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -308,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */,
 				08754F381E2132230037134B /* ConnectionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;
@@ -503,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;

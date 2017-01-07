@@ -27,7 +27,7 @@ public struct Connection {
         
     }
     
-    fileprivate func requestJSON(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
+    func requestJSON(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
         
         Alamofire.request(url).responseJSON { response in
             
