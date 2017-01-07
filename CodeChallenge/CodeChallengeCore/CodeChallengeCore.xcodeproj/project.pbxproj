@@ -11,6 +11,9 @@
 		0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
 		084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */; };
 		084744E31E2190DF0059B89C /* Connection+HubchatAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */; };
+		084744E61E21992E0059B89C /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E51E21992E0059B89C /* Forum.swift */; };
+		084744E81E2199370059B89C /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E71E2199370059B89C /* ForumPost.swift */; };
+		084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
 		08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* ConnectionManagerTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +35,9 @@
 		0847449A1E216A380059B89C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPI.swift"; sourceTree = "<group>"; };
 		084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPITests.swift"; sourceTree = "<group>"; };
+		084744E51E21992E0059B89C /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		084744E71E2199370059B89C /* ForumPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
+		084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Forum+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +68,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084744E41E2197D20059B89C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				084744E71E2199370059B89C /* ForumPost.swift */,
+				084744E51E21992E0059B89C /* Forum.swift */,
+				084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */,
+			);
+			name = Models;
+			path = CodeChallengeCore/Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		08754EF81E2124FB0037134B = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +103,7 @@
 			children = (
 				08754F051E2124FB0037134B /* CodeChallengeCore.h */,
 				08754F361E2132230037134B /* Connection */,
+				084744E41E2197D20059B89C /* Models */,
 				08754F061E2124FB0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCore;
@@ -267,7 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */,
+				084744E81E2199370059B89C /* ForumPost.swift in Sources */,
+				084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */,
 				08754F381E2132230037134B /* ConnectionManager.swift in Sources */,
+				084744E61E21992E0059B89C /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +360,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -385,6 +407,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
