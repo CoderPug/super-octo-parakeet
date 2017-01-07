@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 /// HubchatAPI constants structs
 struct HubchatAPI {
@@ -18,31 +19,13 @@ struct HubchatAPI {
 }
 
 extension Connection {
-    
+        
     /// Request HubchatAPI photography forum information.
     ///
     /// - Parameter completion: Completion closure.
-    public func requestForumInfo(completion: @escaping (Result<[String: AnyObject]>) -> Void) {
+    public func requestForumInfo(completion: @escaping (Result<Forum>) -> Void) {
 
-        requestJSON(url: HubchatAPI.ForumPhotographyURL) { result in
-            
-            switch result {
-                
-            case let .Failure(error):
-                
-                return completion(.Failure(error))
-                
-            case let .Success(object):
-                
-                guard let object = object as? [String: AnyObject] else {
-                    
-                    return completion(.Failure(ConnectionError.responseNotJSON))
-                }
-                
-                completion(.Success(object))
-                break
-            }
-        }
+        requestJSON(url: HubchatAPI.ForumPhotographyURL, completion: completion)
     }
     
     /// Request HubchatAPI photography forum posts.
