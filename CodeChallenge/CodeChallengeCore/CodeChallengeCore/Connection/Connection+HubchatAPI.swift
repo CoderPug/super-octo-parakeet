@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// HubchatAPI constants structs
 struct HubchatAPI {
     
     static let server = "https://api.hubchat.com/"
@@ -18,6 +19,9 @@ struct HubchatAPI {
 
 extension Connection {
     
+    /// Request HubchatAPI photography forum information.
+    ///
+    /// - Parameter completion: Completion closure.
     public func requestForumInfo(completion: @escaping (Result<[String: AnyObject]>) -> Void) {
 
         requestJSON(url: HubchatAPI.ForumPhotographyURL) { result in
@@ -41,6 +45,9 @@ extension Connection {
         }
     }
     
+    /// Request HubchatAPI photography forum posts.
+    ///
+    /// - Parameter completion: Completion closure.
     public func requestForumPosts(completion: @escaping (Result<[String: AnyObject]>) -> Void) {
         
         requestJSON(url: HubchatAPI.ForumPhotographyPostsURL) { result in

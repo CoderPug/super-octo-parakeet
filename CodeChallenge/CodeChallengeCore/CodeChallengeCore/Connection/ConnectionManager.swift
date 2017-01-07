@@ -15,18 +15,28 @@ public enum Result<T> {
     case Success(T)
 }
 
+/// Enum of possible ConnectionError-s
+///
+/// - responseNotJSON: response could not be parsed as JSON error.
+/// - unknown: unhandled error.
 enum ConnectionError: Error {
     
     case responseNotJSON
     case unkwnon
 }
 
+/// Connection Manager main struct
 public struct Connection {
     
     public init() {
         
     }
     
+    /// Internal request method. Currently only supporting GET requests.
+    ///
+    /// - Parameters:
+    ///   - url: String request url.
+    ///   - completion: Completion closure.
     func requestJSON(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
         
         Alamofire.request(url).responseJSON { response in
