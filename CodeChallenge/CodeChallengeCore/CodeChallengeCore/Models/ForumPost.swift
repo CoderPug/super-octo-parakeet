@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+public struct ForumPost: ConnectionParseable {
+    
+    let id: String //uuid
+    let text: String //rawContent
+    let userAvatarURL: String? // createdBy.avatar.url
+    let userUsername: String? // createdBy.username
+    let imageURLs: [String]? // entities.images.cdnUrl
+    let upVotes: Int  //stats.upVotes
+}

@@ -16,6 +16,7 @@
 		084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */; };
 		084744ED1E21AA770059B89C /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744EC1E21AA770059B89C /* ModelsTests.swift */; };
 		084744EF1E21AFC30059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
+		084744F21E21B4D30059B89C /* ForumPost+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
 		08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* ConnectionManagerTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,6 +42,7 @@
 		084744E71E2199370059B89C /* ForumPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
 		084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Forum+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		084744EC1E21AA770059B89C /* ModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
+		084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPost+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				084744E71E2199370059B89C /* ForumPost.swift */,
+				084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */,
 				084744E51E21992E0059B89C /* Forum.swift */,
 				084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */,
 			);
@@ -305,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */,
+				084744F21E21B4D30059B89C /* ForumPost+SwiftyJSON.swift in Sources */,
 				084744E81E2199370059B89C /* ForumPost.swift in Sources */,
 				084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */,
 				08754F381E2132230037134B /* ConnectionManager.swift in Sources */,
