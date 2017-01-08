@@ -29,4 +29,42 @@ struct Network {
             }
         }
     }
+    
+    func getForumPosts() -> Promise<[ForumPost]> {
+        
+        return Promise { fulfill, reject in
+            
+            Connection().requestForumPosts { result in
+                
+                switch result {
+                    
+                case let .Failure(error):
+                    reject(error)
+                    
+                case let .Success(forumPosts):
+                    
+                    fulfill(forumPosts.posts)
+                }
+            }
+        }
+    }
+    
+    func getImage(url: String) -> Promise<UIImage> {
+        
+        return Promise { fulfill, reject in
+            
+            Connection().requestImage(url: url) { result in
+                
+                switch result {
+                    
+                case let .Failure(error):
+                    reject(error)
+                    
+                case let .Success(image):
+                    
+                    fulfill(image)
+                }
+            }
+        }
+    }
 }
