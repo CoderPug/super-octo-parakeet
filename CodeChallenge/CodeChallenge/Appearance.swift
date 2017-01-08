@@ -19,7 +19,6 @@ struct Appearance {
         static let empty = UIColor.init(colorLiteralRed: 244.0/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 1.0)
     }
     
-    @available(iOS 8.2, *)
     struct Fonts {
         
         static let h1 = UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightHeavy)
@@ -36,10 +35,6 @@ func globalAppearance() {
     
     let navigationBarAppearace = UINavigationBar.appearance()
     navigationBarAppearace.tintColor = Appearance.Colors.first
-    if #available(iOS 8.2, *) {
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: Appearance.Colors.first,
-                                                      NSFontAttributeName: Appearance.Fonts.h1]
-    } else {
-        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: Appearance.Colors.first]
-    }
+    navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName: Appearance.Colors.first,
+                                                  NSFontAttributeName: Appearance.Fonts.h1]
 }
