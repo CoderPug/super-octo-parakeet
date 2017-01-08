@@ -16,6 +16,7 @@ class ForumPostsViewController: UIViewController {
     var viewForumHeader: ForumHeaderView = ForumHeaderView()
     var collectionViewPosts: UICollectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
     var posts: [ForumPost] = []
+    var postWidth: CGFloat?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +32,12 @@ class ForumPostsViewController: UIViewController {
         
         appareance()
         layout()
+        
+        collectionViewPosts.delegate = self
+        collectionViewPosts.dataSource = self
+        collectionViewPosts.register(ForumView.self, forCellWithReuseIdentifier: ForumView.cellIdentifier)
+        collectionViewPosts.showsVerticalScrollIndicator = false
+        collectionViewPosts.showsHorizontalScrollIndicator = false
     }
     
     private func layout() {
@@ -46,12 +53,6 @@ class ForumPostsViewController: UIViewController {
         }
         
         //  collectionViewPosts
-        collectionViewPosts.delegate = self
-        collectionViewPosts.dataSource = self
-        collectionViewPosts.register(ForumView.self, forCellWithReuseIdentifier: ForumView.cellIdentifier)
-        collectionViewPosts.showsVerticalScrollIndicator = false
-        collectionViewPosts.showsHorizontalScrollIndicator = false
-        
         view.addSubview(collectionViewPosts)
         
         collectionViewPosts.snp.makeConstraints { make in

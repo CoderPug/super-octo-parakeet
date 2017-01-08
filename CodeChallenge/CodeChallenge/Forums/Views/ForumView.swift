@@ -25,6 +25,9 @@ final class ForumView: UICollectionViewCell {
         
         appareance()
         layout()
+        
+        forumImage.contentMode = .scaleAspectFit
+        forumImage.clipsToBounds = true
     }
     
     private func layout() {
@@ -34,7 +37,9 @@ final class ForumView: UICollectionViewCell {
         
         forumImage.snp.makeConstraints { make in
             
-            make.edges.equalToSuperview()
+            make.topMargin.equalTo(70)
+            make.width.equalToSuperview()
+            make.height.equalTo(self.frame.size.width / 16 * 12)
         }
         
         //  forumText
@@ -52,6 +57,7 @@ final class ForumView: UICollectionViewCell {
         backgroundColor = UIColor.white
         forumText.font = Appearance.Fonts.h3
         forumText.textColor = Appearance.Colors.second
+        forumImage.backgroundColor = UIColor.black
     }
     
 }

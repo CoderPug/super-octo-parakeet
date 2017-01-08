@@ -10,11 +10,9 @@ import UIKit
 
 extension ForumPostsViewController {
     
-    static let flowLayoutMaxWidth: CGFloat = 400
-    static let flowLayoutMaxHeight: CGFloat = ForumPostsViewController.flowLayoutMaxHeight * 16 / 9
-    static let flowLayoutEdgeTop: CGFloat = 5
-    static let flowLayoutEdgeBottom: CGFloat = 5
-    static let flowLayoutEdgeSides: CGFloat = 0
+    static let flowLayoutMaxWidth: CGFloat = 350
+    static let flowLayoutEdgeTop: CGFloat = 10
+    static let flowLayoutEdgeBottom: CGFloat = 10
 }
 
 extension ForumPostsViewController: UICollectionViewDataSource {
@@ -48,18 +46,22 @@ extension ForumPostsViewController: UICollectionViewDelegate, UICollectionViewDe
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        return CGSize(width: min(self.view.frame.size.width, ForumPostsViewController.flowLayoutMaxWidth),
-                      height: min(self.view.frame.size.width / 16 * 9, ForumPostsViewController.flowLayoutMaxWidth))
+        postWidth = min(self.view.frame.size.width, ForumPostsViewController.flowLayoutMaxWidth)
+        
+        return CGSize(width: postWidth ?? self.view.frame.size.width,
+                      height: (postWidth ?? self.view.frame.size.width) / 16 * 12 + 70 + 80)
     }
     
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         insetForSectionAt section: Int) -> UIEdgeInsets {
         
+        let horizontalSpan = (self.view.frame.size.width - (postWidth ?? self.view.frame.size.width) * 2) / 4
+        
         return UIEdgeInsets(top: ForumPostsViewController.flowLayoutEdgeTop,
-                            left: ForumPostsViewController.flowLayoutEdgeSides,
+                            left: horizontalSpan,
                             bottom: ForumPostsViewController.flowLayoutEdgeBottom,
-                            right: ForumPostsViewController.flowLayoutEdgeSides)
+                            right: horizontalSpan)
     }
     
 }

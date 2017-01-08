@@ -26,6 +26,9 @@ final class ForumHeaderView: UIView {
      
         appareance()
         layout()
+        
+        imageBackground.contentMode = .scaleAspectFill
+        imageBackground.clipsToBounds = true
     }
     
     private func layout() {
