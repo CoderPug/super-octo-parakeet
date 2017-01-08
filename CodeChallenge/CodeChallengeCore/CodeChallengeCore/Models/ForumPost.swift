@@ -12,8 +12,8 @@ public struct ForumPost: ConnectionParseable {
     
     public let id: String
     public let text: String
-    public let userAvatarURL: String?
-    public let userUsername: String?
+    public let userAvatarURL: String
+    public let userUsername: String
     public let imageURLs: [String]?
     public let upVotes: Int
 }

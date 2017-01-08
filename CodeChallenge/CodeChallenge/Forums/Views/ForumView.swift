@@ -11,12 +11,19 @@ import SnapKit
 
 final class ForumView: UICollectionViewCell {
     
-    var forumImage: UIImageView = UIImageView()
-    var forumText: UILabel = UILabel()
+    var imageUserAvatar: UIImageView = UIImageView()
+    var imageForum: UIImageView = UIImageView()
+    var labelUserName: UILabel = UILabel()
+    var labelForumText: UILabel = UILabel()
     
     override func layoutSubviews() {
         
         customize()
+    }
+    
+    override func prepareForReuse() {
+        
+        imageForum.image = nil
     }
     
     //  MARK: Private
@@ -26,38 +33,62 @@ final class ForumView: UICollectionViewCell {
         appareance()
         layout()
         
-        forumImage.contentMode = .scaleAspectFit
-        forumImage.clipsToBounds = true
+        labelForumText.numberOfLines = 2
+        imageForum.contentMode = .scaleAspectFit
+        imageForum.clipsToBounds = true
     }
     
     private func layout() {
         
-        //  forumImage
-        addSubview(forumImage)
+        //  imageUserAvatar
+        addSubview(imageUserAvatar)
         
-        forumImage.snp.makeConstraints { make in
+        imageUserAvatar.snp.makeConstraints { make in
             
-            make.topMargin.equalTo(70)
-            make.width.equalToSuperview()
-            make.height.equalTo(self.frame.size.width / 16 * 12)
+            make.width.equalTo(30)
+            make.height.equalTo(30)
+            make.leading.equalTo(10)
+            make.topMargin.equalTo(10)
+        }
+        
+        //  imageUsername
+        addSubview(labelUserName)
+        
+        labelUserName.snp.makeConstraints { make in
+            
+            make.topMargin.equalTo(10)
+            make.leading.equalTo(imageUserAvatar.snp.trailing).offset(10)
         }
         
         //  forumText
-        addSubview(forumText)
+        addSubview(labelForumText)
         
-        forumText.snp.makeConstraints { make in
+        labelForumText.snp.makeConstraints { make in
             
+            make.trailing.equalTo(10)
+            make.leading.equalTo(10)
+            make.topMargin.equalTo(50)
+        }
+        
+        //  forumImage
+        addSubview(imageForum)
+        
+        imageForum.snp.makeConstraints { make in
+            
+            make.topMargin.equalTo(labelForumText.snp.bottom).offset(20)
             make.width.equalToSuperview()
-            make.topMargin.equalTo(10)
+            make.height.equalTo(self.frame.size.width / 16 * 12)
         }
     }
     
     private func appareance() {
         
         backgroundColor = UIColor.white
-        forumText.font = Appearance.Fonts.h3
-        forumText.textColor = Appearance.Colors.second
-        forumImage.backgroundColor = UIColor.black
+        labelUserName.font = Appearance.Fonts.h3
+        labelUserName.textColor = Appearance.Colors.second
+        labelForumText.font = Appearance.Fonts.text
+        labelForumText.textColor = Appearance.Colors.second
+        imageForum.backgroundColor = UIColor.black
     }
     
 }

@@ -15,8 +15,10 @@ extension ForumView {
     
     func load(_ forum: ForumPost) {
         
-        forumText.text = forum.text
-        forumImage.getImage(url: forum.imageURLs?.first ?? "")
+        labelForumText.text = forum.text
+        labelUserName.text = forum.userUsername
+        imageForum.getImage(url: forum.imageURLs?.first ?? "")
+        imageUserAvatar.getImage(url: forum.userAvatarURL)
     }
     
 }
