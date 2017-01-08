@@ -10,6 +10,6 @@ import Foundation
 
 public struct ForumPosts: ConnectionParseable {
     
-    let posts: [ForumPost]
-    let totalCount: Int?
+    public let posts: [ForumPost]
+    public let totalCount: Int?
 }

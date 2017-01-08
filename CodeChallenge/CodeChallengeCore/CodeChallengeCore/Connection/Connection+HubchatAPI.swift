@@ -35,6 +35,16 @@ extension Connection {
         
         requestJSON(url: HubchatAPI.forumPhotographyPostsURL, completion: completion)
     }
+    
+    /// Request image resource.
+    ///
+    /// - Parameters:
+    ///   - url: String image URL.
+    ///   - completion: Completion closure.
+    public func requestImage(url: String, completion: @escaping (Result<UIImage>) -> Void) {
+        
+        requestImageResource(url: url, completion: completion)
+    }
 
 }
 

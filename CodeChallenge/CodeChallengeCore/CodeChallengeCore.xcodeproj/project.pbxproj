@@ -19,6 +19,7 @@
 		084744F21E21B4D30059B89C /* ForumPost+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */; };
 		084744F41E21BB660059B89C /* ForumPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F31E21BB660059B89C /* ForumPosts.swift */; };
 		084744F61E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F51E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift */; };
+		08709C291E220B1400C87563 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08709C281E220B1400C87563 /* AlamofireImage.framework */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
 		08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* ConnectionManagerTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +48,7 @@
 		084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPost+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		084744F31E21BB660059B89C /* ForumPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPosts.swift; sourceTree = "<group>"; };
 		084744F51E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPosts+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		08709C281E220B1400C87563 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			files = (
 				0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */,
 				0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */,
+				08709C291E220B1400C87563 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +148,7 @@
 		08754F3A1E21351A0037134B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				08709C281E220B1400C87563 /* AlamofireImage.framework */,
 				084744991E216A380059B89C /* Alamofire.framework */,
 				0847449A1E216A380059B89C /* SwiftyJSON.framework */,
 			);
@@ -270,6 +274,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
 			);
 			outputPaths = (
 			);

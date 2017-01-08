@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import AlamofireImage
 import SwiftyJSON
 
 public enum Result<T> {
@@ -28,13 +29,17 @@ protocol ConnectionParseable {
 /// - unknown: unhandled error.
 enum ConnectionError: Error {
     
+    case requestWrongURL
     case responseNotJSON
     case responseConvertionToModelFailed
+    case responseConvertionToImageFailed
     case unkwnon
 }
 
 /// Connection Manager main struct
 public struct Connection {
+    
+    static let downloader = ImageDownloader()
     
     public init() {
         
@@ -45,11 +50,11 @@ public struct Connection {
     /// - Parameters:
     ///   - url: String request url.
     ///   - completion: Completion closure.
-    func request(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
+    func requestJSONResource(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
         
         Alamofire.request(url).responseJSON { response in
             
-            dump(response)
+//            dump(response)
             
             guard let responseJSON = response.result.value else {
                 
@@ -60,6 +65,31 @@ public struct Connection {
         }
     }
     
+    /// Internal download image method.
+    ///
+    /// - Parameters:
+    ///   - url: String image url.
+    ///   - completion: Completion closure.
+    func requestImageResource(url: String, completion: @escaping (Result<UIImage>) -> Void) {
+        
+        guard let url = URL(string: url) else {
+            
+            return completion(.Failure(ConnectionError.requestWrongURL))
+        }
+        
+        let urlRequest = URLRequest(url: url)
+        
+        Connection.downloader.download(urlRequest) { response in
+            
+            guard let image = response.result.value else {
+                
+                return completion(.Failure(ConnectionError.responseConvertionToImageFailed))
+            }
+            
+            completion(.Success(image))
+        }
+    }
+    
     /// Internal generic response-type request method. Currently only supporting GET requests.
     ///
     /// - Parameters:
@@ -67,7 +97,7 @@ public struct Connection {
     ///   - completion: Completion closure with generic response-type.
     func requestJSON<T: ConnectionParseable>(url: String, completion: @escaping (Result<T>) -> Void) {
         
-        request(url: url) { result in
+        requestJSONResource(url: url) { result in
             
             switch result {
                 

@@ -10,10 +10,10 @@ import Foundation
 
 public struct ForumPost: ConnectionParseable {
     
-    let id: String
-    let text: String
-    let userAvatarURL: String?
-    let userUsername: String?
-    let imageURLs: [String]?
-    let upVotes: Int
+    public let id: String
+    public let text: String
+    public let userAvatarURL: String?
+    public let userUsername: String?
+    public let imageURLs: [String]?
+    public let upVotes: Int
 }
