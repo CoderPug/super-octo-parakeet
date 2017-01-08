@@ -49,7 +49,7 @@ extension ForumPostsViewController: UICollectionViewDelegate, UICollectionViewDe
         postWidth = min(self.view.frame.size.width, ForumPostsViewController.flowLayoutMaxWidth)
         
         return CGSize(width: postWidth ?? self.view.frame.size.width,
-                      height: (postWidth ?? self.view.frame.size.width) / 16 * 12 + 70 + 80)
+                      height: (postWidth ?? self.view.frame.size.width) / 16 * 12 + 70 + 50)
     }
     
     func collectionView(_ collectionView: UICollectionView,

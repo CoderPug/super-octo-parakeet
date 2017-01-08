@@ -19,6 +19,11 @@ extension ForumView {
         labelUserName.text = forum.userUsername
         imageForum.getImage(url: forum.imageURLs?.first ?? "")
         imageUserAvatar.getImage(url: forum.userAvatarURL)
+        
+        if let totalPhotos = forum.imageURLs?.count,
+            totalPhotos > 1 {
+            labelImagesCounter.text = "\(totalPhotos - 1) more"
+        }
     }
     
 }

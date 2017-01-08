@@ -15,6 +15,7 @@ final class ForumView: UICollectionViewCell {
     var imageForum: UIImageView = UIImageView()
     var labelUserName: UILabel = UILabel()
     var labelForumText: UILabel = UILabel()
+    var labelImagesCounter: UILabel = UILabel()
     
     override func layoutSubviews() {
         
@@ -23,6 +24,7 @@ final class ForumView: UICollectionViewCell {
     
     override func prepareForReuse() {
         
+        labelImagesCounter.text = ""
         imageForum.image = nil
     }
     
@@ -79,11 +81,22 @@ final class ForumView: UICollectionViewCell {
             make.width.equalToSuperview()
             make.height.equalTo(self.frame.size.width / 16 * 12)
         }
+        
+        //  labelImagesCounter
+        addSubview(labelImagesCounter)
+        
+        labelImagesCounter.snp.makeConstraints { make in
+        
+            make.trailing.equalTo(imageForum.snp.trailing).inset(5)
+            make.bottom.equalTo(imageForum.snp.bottom).inset(5)
+        }
     }
     
     private func appareance() {
         
         backgroundColor = UIColor.white
+        labelImagesCounter.font = Appearance.Fonts.h4
+        labelImagesCounter.textColor = UIColor.white
         labelUserName.font = Appearance.Fonts.h3
         labelUserName.textColor = Appearance.Colors.second
         labelForumText.font = Appearance.Fonts.text
