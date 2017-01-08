@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PromiseKit
 
 extension UIImageView {
     
@@ -22,4 +23,25 @@ extension UIImageView {
                 dump(error)
         }
     }
+    
+    func getPromiseImage(url: String) -> Promise<()> {
+        
+        return Promise { fulfill, reject in
+            
+            Network().getImage(url: url)
+                .then { [weak self] image in
+                    
+                    self?.image = image
+                    
+                }.then { _ in
+                    
+                    fulfill()
+                    
+                }.catch { error in
+                    
+                    reject(error)
+            }
+        }
+    }
+    
 }
