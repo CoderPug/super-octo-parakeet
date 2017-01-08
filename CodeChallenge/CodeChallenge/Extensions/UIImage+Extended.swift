@@ -44,4 +44,13 @@ extension UIImageView {
         }
     }
     
+    func applyBur() {
+        
+        let effect = UIBlurEffect(style: .extraLight)
+        let effectView = UIVisualEffectView(effect: effect)
+        effectView.frame = self.bounds
+        effectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        self.addSubview(effectView)
+    }
 }

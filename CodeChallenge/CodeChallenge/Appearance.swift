@@ -17,6 +17,7 @@ struct Appearance {
         static let second = UIColor.init(colorLiteralRed: 8.0/255.0, green: 28.0/255.0, blue: 36.0/255.0, alpha: 1.0)
         static let third = UIColor.init(colorLiteralRed: 51.0/255.0, green: 51.0/255.0, blue: 51.0/255.0, alpha: 1.0)
         static let empty = UIColor.init(colorLiteralRed: 244.0/255.0, green: 244.0/255.0, blue: 244.0/255.0, alpha: 1.0)
+        static let red = UIColor.init(colorLiteralRed: 222.0/255.0, green: 81.0/255.0, blue: 97.0/255.0, alpha: 1.0)
     }
     
     struct Fonts {
