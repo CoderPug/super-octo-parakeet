@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		081B3C741E2115300086D1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B3C731E2115300086D1CE /* AppDelegate.swift */; };
 		081B3C761E2115300086D1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B3C751E2115300086D1CE /* ViewController.swift */; };
-		081B3C791E2115310086D1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081B3C771E2115310086D1CE /* Main.storyboard */; };
 		081B3C7B1E2115310086D1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081B3C7A1E2115310086D1CE /* Assets.xcassets */; };
-		081B3C7E1E2115310086D1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 081B3C7C1E2115310086D1CE /* LaunchScreen.storyboard */; };
 		081B3C891E2115310086D1CE /* CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B3C881E2115310086D1CE /* CodeChallengeTests.swift */; };
 		084744D91E216D540059B89C /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744D11E216B1C0059B89C /* CodeChallengeCore.framework */; };
 		084744DA1E216D540059B89C /* CodeChallengeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 084744D11E216B1C0059B89C /* CodeChallengeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -68,9 +66,7 @@
 		081B3C701E2115300086D1CE /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		081B3C731E2115300086D1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		081B3C751E2115300086D1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		081B3C781E2115310086D1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		081B3C7A1E2115310086D1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		081B3C7D1E2115310086D1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		081B3C7F1E2115310086D1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		081B3C841E2115310086D1CE /* CodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081B3C881E2115310086D1CE /* CodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeTests.swift; sourceTree = "<group>"; };
@@ -131,9 +127,7 @@
 			children = (
 				081B3C731E2115300086D1CE /* AppDelegate.swift */,
 				081B3C751E2115300086D1CE /* ViewController.swift */,
-				081B3C771E2115310086D1CE /* Main.storyboard */,
 				081B3C7A1E2115310086D1CE /* Assets.xcassets */,
-				081B3C7C1E2115310086D1CE /* LaunchScreen.storyboard */,
 				081B3C7F1E2115310086D1CE /* Info.plist */,
 			);
 			path = CodeChallenge;
@@ -292,9 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081B3C7E1E2115310086D1CE /* LaunchScreen.storyboard in Resources */,
 				081B3C7B1E2115310086D1CE /* Assets.xcassets in Resources */,
-				081B3C791E2115310086D1CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,25 +424,6 @@
 			targetProxy = 084744DB1E216D540059B89C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		081B3C771E2115310086D1CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				081B3C781E2115310086D1CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		081B3C7C1E2115310086D1CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				081B3C7D1E2115310086D1CE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		081B3C8B1E2115310086D1CE /* Debug */ = {
