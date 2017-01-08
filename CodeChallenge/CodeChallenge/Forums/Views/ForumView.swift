@@ -34,7 +34,7 @@ final class ForumView: UICollectionViewCell {
         
         forumImage.snp.makeConstraints { make in
             
-            make.edges.equalToSuperview().inset(UIEdgeInsetsMake(5, 5, 5, 5))
+            make.edges.equalToSuperview()
         }
         
         //  forumText
@@ -54,4 +54,9 @@ final class ForumView: UICollectionViewCell {
         forumText.textColor = Appearance.Colors.second
     }
     
+}
+
+extension ForumView {
+    
+    static let cellIdentifier = "forumViewCell"
 }

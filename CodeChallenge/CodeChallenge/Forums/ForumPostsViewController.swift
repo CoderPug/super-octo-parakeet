@@ -48,7 +48,7 @@ class ForumPostsViewController: UIViewController {
         //  collectionViewPosts
         collectionViewPosts.delegate = self
         collectionViewPosts.dataSource = self
-        collectionViewPosts.register(ForumView.self, forCellWithReuseIdentifier: "Cell")
+        collectionViewPosts.register(ForumView.self, forCellWithReuseIdentifier: ForumView.cellIdentifier)
         collectionViewPosts.showsVerticalScrollIndicator = false
         collectionViewPosts.showsHorizontalScrollIndicator = false
         
@@ -68,91 +68,11 @@ class ForumPostsViewController: UIViewController {
         view.backgroundColor = Appearance.Colors.empty
         collectionViewPosts.backgroundColor = Appearance.Colors.empty
     }
+    
 }
 
 extension ForumPostsViewController {
     
     static let viewForumHeaderHeight: CGFloat = 100
-}
 
-extension ForumPostsViewController {
-    
-    func requestForumInfo() {
-        
-        viewForumHeader.progressView.startAnimating()
-        
-        Network().getForumInfo()
-            .then { [weak self] forum in
-                
-                self?.viewForumHeader.load(forum)
-                
-            }.catch { error in
-                
-                dump(error)
-        }
-    }
-    
-    func requestForumPosts() {
-        
-        Network().getForumPosts()
-            .then { [weak self] posts in
-                
-                self?.posts = posts
-                
-            }.then { [weak self] posts in
-                
-                self?.collectionViewPosts.reloadData()
-                
-            }.catch { error in
-                
-                dump(error)
-        }
-    }
-}
-
-extension ForumPostsViewController: UICollectionViewDataSource {
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        
-        return posts.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        let forumPost = posts[indexPath.row]
-        
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? ForumView else {
-            
-            return UICollectionViewCell()
-        }
-
-        cell.load(forumPost)
-        
-        return cell
-    }
-    
-}
-
-extension ForumPostsViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        return CGSize(width: self.view.frame.size.width,
-                      height: 200)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        layout collectionViewLayout: UICollectionViewLayout,
-                        insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: 5,
-                            left: 0,
-                            bottom: 0,
-                            right: 5)
-    }
-    
 }
