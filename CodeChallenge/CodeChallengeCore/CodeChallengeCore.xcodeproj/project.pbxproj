@@ -7,9 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744991E216A380059B89C /* Alamofire.framework */; };
+		0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
+		084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */; };
+		084744E31E2190DF0059B89C /* Connection+HubchatAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */; };
+		084744E61E21992E0059B89C /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E51E21992E0059B89C /* Forum.swift */; };
+		084744E81E2199370059B89C /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744E71E2199370059B89C /* ForumPost.swift */; };
+		084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */; };
+		084744ED1E21AA770059B89C /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744EC1E21AA770059B89C /* ModelsTests.swift */; };
+		084744EF1E21AFC30059B89C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0847449A1E216A380059B89C /* SwiftyJSON.framework */; };
+		084744F21E21B4D30059B89C /* ForumPost+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */; };
+		084744F41E21BB660059B89C /* ForumPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F31E21BB660059B89C /* ForumPosts.swift */; };
+		084744F61E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084744F51E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift */; };
 		08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08754F021E2124FB0037134B /* CodeChallengeCore.framework */; };
-		08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */; };
+		08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F101E2124FC0037134B /* ConnectionManagerTests.swift */; };
 		08754F131E2124FC0037134B /* CodeChallengeCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 08754F051E2124FB0037134B /* CodeChallengeCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08754F381E2132230037134B /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08754F371E2132230037134B /* ConnectionManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +36,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		084744991E216A380059B89C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		0847449A1E216A380059B89C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPI.swift"; sourceTree = "<group>"; };
+		084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPITests.swift"; sourceTree = "<group>"; };
+		084744E51E21992E0059B89C /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
+		084744E71E2199370059B89C /* ForumPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPost.swift; sourceTree = "<group>"; };
+		084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Forum+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		084744EC1E21AA770059B89C /* ModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
+		084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPost+SwiftyJSON.swift"; sourceTree = "<group>"; };
+		084744F31E21BB660059B89C /* ForumPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPosts.swift; sourceTree = "<group>"; };
+		084744F51E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPosts+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		08754F021E2124FB0037134B /* CodeChallengeCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CodeChallengeCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08754F051E2124FB0037134B /* CodeChallengeCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeChallengeCore.h; sourceTree = "<group>"; };
 		08754F061E2124FB0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08754F0B1E2124FC0037134B /* CodeChallengeCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallengeCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeCoreTests.swift; sourceTree = "<group>"; };
+		08754F101E2124FC0037134B /* ConnectionManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTests.swift; sourceTree = "<group>"; };
 		08754F121E2124FC0037134B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08754F371E2132230037134B /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0847449B1E216A380059B89C /* Alamofire.framework in Frameworks */,
+				0847449C1E216A380059B89C /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084744EF1E21AFC30059B89C /* SwiftyJSON.framework in Frameworks */,
 				08754F0C1E2124FC0037134B /* CodeChallengeCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,12 +78,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		084744E41E2197D20059B89C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				084744E51E21992E0059B89C /* Forum.swift */,
+				084744EA1E21A7D00059B89C /* Forum+SwiftyJSON.swift */,
+				084744E71E2199370059B89C /* ForumPost.swift */,
+				084744F11E21B4D30059B89C /* ForumPost+SwiftyJSON.swift */,
+				084744F31E21BB660059B89C /* ForumPosts.swift */,
+				084744F51E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift */,
+			);
+			name = Models;
+			path = CodeChallengeCore/Models;
+			sourceTree = SOURCE_ROOT;
+		};
 		08754EF81E2124FB0037134B = {
 			isa = PBXGroup;
 			children = (
 				08754F041E2124FB0037134B /* CodeChallengeCore */,
 				08754F0F1E2124FC0037134B /* CodeChallengeCoreTests */,
 				08754F031E2124FB0037134B /* Products */,
+				08754F3A1E21351A0037134B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				08754F051E2124FB0037134B /* CodeChallengeCore.h */,
+				08754F361E2132230037134B /* Connection */,
+				084744E41E2197D20059B89C /* Models */,
 				08754F061E2124FB0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCore;
@@ -80,10 +125,30 @@
 		08754F0F1E2124FC0037134B /* CodeChallengeCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				08754F101E2124FC0037134B /* CodeChallengeCoreTests.swift */,
+				08754F101E2124FC0037134B /* ConnectionManagerTests.swift */,
+				084744E21E2190DF0059B89C /* Connection+HubchatAPITests.swift */,
+				084744EC1E21AA770059B89C /* ModelsTests.swift */,
 				08754F121E2124FC0037134B /* Info.plist */,
 			);
 			path = CodeChallengeCoreTests;
+			sourceTree = "<group>";
+		};
+		08754F361E2132230037134B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				08754F371E2132230037134B /* ConnectionManager.swift */,
+				084744DF1E217C620059B89C /* Connection+HubchatAPI.swift */,
+			);
+			path = Connection;
+			sourceTree = "<group>";
+		};
+		08754F3A1E21351A0037134B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				084744991E216A380059B89C /* Alamofire.framework */,
+				0847449A1E216A380059B89C /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -104,10 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08754F161E2124FC0037134B /* Build configuration list for PBXNativeTarget "CodeChallengeCore" */;
 			buildPhases = (
+				0E0BC893FE2ABEE628C5FBAD /* [CP] Check Pods Manifest.lock */,
 				08754EFD1E2124FB0037134B /* Sources */,
 				08754EFE1E2124FB0037134B /* Frameworks */,
 				08754EFF1E2124FB0037134B /* Headers */,
 				08754F001E2124FB0037134B /* Resources */,
+				0847449D1E216A490059B89C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,6 +192,7 @@
 				08754F071E2124FC0037134B /* Sources */,
 				08754F081E2124FC0037134B /* Frameworks */,
 				08754F091E2124FC0037134B /* Resources */,
+				084744F01E21AFDD0059B89C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -149,11 +217,12 @@
 					08754F011E2124FB0037134B = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 7QN6NJ95ZV;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 					};
 					08754F0A1E2124FC0037134B = {
 						CreatedOnToolsVersion = 8.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -192,11 +261,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0847449D1E216A490059B89C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		084744F01E21AFDD0059B89C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		0E0BC893FE2ABEE628C5FBAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		08754EFD1E2124FB0037134B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				084744F41E21BB660059B89C /* ForumPosts.swift in Sources */,
+				084744E01E217C620059B89C /* Connection+HubchatAPI.swift in Sources */,
+				084744F21E21B4D30059B89C /* ForumPost+SwiftyJSON.swift in Sources */,
+				084744F61E21BBB50059B89C /* ForumPosts+SwiftyJSON.swift in Sources */,
+				084744E81E2199370059B89C /* ForumPost.swift in Sources */,
+				084744EB1E21A7D00059B89C /* Forum+SwiftyJSON.swift in Sources */,
+				08754F381E2132230037134B /* ConnectionManager.swift in Sources */,
+				084744E61E21992E0059B89C /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,7 +328,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08754F111E2124FC0037134B /* CodeChallengeCoreTests.swift in Sources */,
+				084744E31E2190DF0059B89C /* Connection+HubchatAPITests.swift in Sources */,
+				084744ED1E21AA770059B89C /* ModelsTests.swift in Sources */,
+				08754F111E2124FC0037134B /* ConnectionManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -266,6 +393,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -276,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -311,6 +440,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -321,6 +451,8 @@
 		08754F171E2124FC0037134B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -328,6 +460,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -335,6 +471,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +479,8 @@
 		08754F181E2124FC0037134B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
@@ -349,6 +488,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -363,6 +506,13 @@
 		08754F1A1E2124FC0037134B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;
@@ -374,6 +524,13 @@
 		08754F1B1E2124FC0037134B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS/**",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeCoreTests;
