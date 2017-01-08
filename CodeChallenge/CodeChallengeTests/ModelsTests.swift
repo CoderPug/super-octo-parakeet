@@ -8,8 +8,7 @@
 
 import XCTest
 import SwiftyJSON
-
-@testable import CodeChallengeCore
+@testable import CodeChallenge
 
 class ModelsTests: XCTestCase {
     

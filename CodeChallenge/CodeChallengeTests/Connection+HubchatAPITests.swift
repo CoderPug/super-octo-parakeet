@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CodeChallengeCore
+@testable import CodeChallenge
 
 class Connection_HubchatAPITests: XCTestCase {
         

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jose Torres. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import SnapKit
 
 final class ForumView: UICollectionViewCell {

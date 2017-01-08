@@ -10,8 +10,21 @@
 		081B3C741E2115300086D1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B3C731E2115300086D1CE /* AppDelegate.swift */; };
 		081B3C7B1E2115310086D1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 081B3C7A1E2115310086D1CE /* Assets.xcassets */; };
 		081B3C891E2115310086D1CE /* CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081B3C881E2115310086D1CE /* CodeChallengeTests.swift */; };
-		084744D91E216D540059B89C /* CodeChallengeCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084744D11E216B1C0059B89C /* CodeChallengeCore.framework */; };
-		084744DA1E216D540059B89C /* CodeChallengeCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 084744D11E216B1C0059B89C /* CodeChallengeCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		081D98971E225D5300702D7C /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A07A311E22568D0076B15B /* PromiseKit.framework */; };
+		081D98981E225D5300702D7C /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08A07A321E22568D0076B15B /* SnapKit.framework */; };
+		081D989C1E225D5400702D7C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081D98991E225D5400702D7C /* Alamofire.framework */; };
+		081D989D1E225D5400702D7C /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081D989A1E225D5400702D7C /* AlamofireImage.framework */; };
+		081D989E1E225D5400702D7C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081D989B1E225D5400702D7C /* SwiftyJSON.framework */; };
+		081D98A11E225E4D00702D7C /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 081D989B1E225D5400702D7C /* SwiftyJSON.framework */; };
+		081D98A21E225E5100702D7C /* SwiftyJSON.framework in Resources */ = {isa = PBXBuildFile; fileRef = 081D989B1E225D5400702D7C /* SwiftyJSON.framework */; };
+		081D98A91E225EFE00702D7C /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A31E225EFE00702D7C /* Forum.swift */; };
+		081D98AA1E225EFE00702D7C /* Forum+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A41E225EFE00702D7C /* Forum+SwiftyJSON.swift */; };
+		081D98AB1E225EFE00702D7C /* ForumPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A51E225EFE00702D7C /* ForumPost.swift */; };
+		081D98AC1E225EFE00702D7C /* ForumPost+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A61E225EFE00702D7C /* ForumPost+SwiftyJSON.swift */; };
+		081D98AD1E225EFE00702D7C /* ForumPosts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A71E225EFE00702D7C /* ForumPosts.swift */; };
+		081D98AE1E225EFE00702D7C /* ForumPosts+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98A81E225EFE00702D7C /* ForumPosts+SwiftyJSON.swift */; };
+		081D98B11E225F0900702D7C /* Connection+HubchatAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98AF1E225F0900702D7C /* Connection+HubchatAPI.swift */; };
+		081D98B21E225F0900702D7C /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 081D98B01E225F0900702D7C /* ConnectionManager.swift */; };
 		08709C141E21E5B700C87563 /* Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C131E21E5B700C87563 /* Appearance.swift */; };
 		08709C171E21E69800C87563 /* ForumPostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C161E21E69800C87563 /* ForumPostsViewController.swift */; };
 		08709C1A1E21E6F000C87563 /* ForumHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C191E21E6F000C87563 /* ForumHeaderView.swift */; };
@@ -22,8 +35,9 @@
 		08709C2E1E220E9600C87563 /* UIImage+Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C2D1E220E9600C87563 /* UIImage+Extended.swift */; };
 		08709C321E22197800C87563 /* ForumPostsViewController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C311E22197800C87563 /* ForumPostsViewController+UICollectionView.swift */; };
 		08709C351E2219B300C87563 /* ForumPostsViewControllerExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08709C341E2219B300C87563 /* ForumPostsViewControllerExtended.swift */; };
-		E724DDE07B1C7659AA804E40 /* Pods_CodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACEAE1C664334000E2F28D51 /* Pods_CodeChallengeTests.framework */; };
-		E762A70F18DB2CC2EAC316D8 /* Pods_CodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F79F35A56E89E0B5AD8FBC29 /* Pods_CodeChallenge.framework */; };
+		08A07A5C1E225CA00076B15B /* Connection+HubchatAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A07A591E225CA00076B15B /* Connection+HubchatAPITests.swift */; };
+		08A07A5D1E225CA00076B15B /* ConnectionManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A07A5A1E225CA00076B15B /* ConnectionManagerTests.swift */; };
+		08A07A5E1E225CA00076B15B /* ModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A07A5B1E225CA00076B15B /* ModelsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,27 +48,6 @@
 			remoteGlobalIDString = 081B3C6F1E2115300086D1CE;
 			remoteInfo = CodeChallenge;
 		};
-		084744D01E216B1C0059B89C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 08754F021E2124FB0037134B;
-			remoteInfo = CodeChallengeCore;
-		};
-		084744D21E216B1C0059B89C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 08754F0B1E2124FC0037134B;
-			remoteInfo = CodeChallengeCoreTests;
-		};
-		084744DB1E216D540059B89C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 08754F011E2124FB0037134B;
-			remoteInfo = CodeChallengeCore;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -64,7 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				084744DA1E216D540059B89C /* CodeChallengeCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,7 +71,17 @@
 		081B3C841E2115310086D1CE /* CodeChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		081B3C881E2115310086D1CE /* CodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeTests.swift; sourceTree = "<group>"; };
 		081B3C8A1E2115310086D1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CodeChallengeCore.xcodeproj; path = CodeChallengeCore/CodeChallengeCore.xcodeproj; sourceTree = "<group>"; };
+		081D98991E225D5400702D7C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		081D989A1E225D5400702D7C /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		081D989B1E225D5400702D7C /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		081D98A31E225EFE00702D7C /* Forum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Forum.swift; path = CodeChallenge/Core/Models/Forum.swift; sourceTree = SOURCE_ROOT; };
+		081D98A41E225EFE00702D7C /* Forum+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Forum+SwiftyJSON.swift"; path = "CodeChallenge/Core/Models/Forum+SwiftyJSON.swift"; sourceTree = SOURCE_ROOT; };
+		081D98A51E225EFE00702D7C /* ForumPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumPost.swift; path = CodeChallenge/Core/Models/ForumPost.swift; sourceTree = SOURCE_ROOT; };
+		081D98A61E225EFE00702D7C /* ForumPost+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ForumPost+SwiftyJSON.swift"; path = "CodeChallenge/Core/Models/ForumPost+SwiftyJSON.swift"; sourceTree = SOURCE_ROOT; };
+		081D98A71E225EFE00702D7C /* ForumPosts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForumPosts.swift; path = CodeChallenge/Core/Models/ForumPosts.swift; sourceTree = SOURCE_ROOT; };
+		081D98A81E225EFE00702D7C /* ForumPosts+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ForumPosts+SwiftyJSON.swift"; path = "CodeChallenge/Core/Models/ForumPosts+SwiftyJSON.swift"; sourceTree = SOURCE_ROOT; };
+		081D98AF1E225F0900702D7C /* Connection+HubchatAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Connection+HubchatAPI.swift"; path = "CodeChallenge/Core/Connection/Connection+HubchatAPI.swift"; sourceTree = SOURCE_ROOT; };
+		081D98B01E225F0900702D7C /* ConnectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ConnectionManager.swift; path = CodeChallenge/Core/Connection/ConnectionManager.swift; sourceTree = SOURCE_ROOT; };
 		08709C131E21E5B700C87563 /* Appearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Appearance.swift; sourceTree = "<group>"; };
 		08709C161E21E69800C87563 /* ForumPostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPostsViewController.swift; sourceTree = "<group>"; };
 		08709C191E21E6F000C87563 /* ForumHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumHeaderView.swift; sourceTree = "<group>"; };
@@ -90,12 +92,11 @@
 		08709C2D1E220E9600C87563 /* UIImage+Extended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extended.swift"; sourceTree = "<group>"; };
 		08709C311E22197800C87563 /* ForumPostsViewController+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ForumPostsViewController+UICollectionView.swift"; sourceTree = "<group>"; };
 		08709C341E2219B300C87563 /* ForumPostsViewControllerExtended.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumPostsViewControllerExtended.swift; sourceTree = "<group>"; };
-		58FAA89AB434807BC03C462F /* Pods-CodeChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge.debug.xcconfig"; sourceTree = "<group>"; };
-		92F50F54E8425D29A53AEF62 /* Pods-CodeChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ACEAE1C664334000E2F28D51 /* Pods_CodeChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B37DB2FA05507FE82BDAA6C5 /* Pods-CodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
-		B79C7B90421E5F3F41ECAF4A /* Pods-CodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
-		F79F35A56E89E0B5AD8FBC29 /* Pods_CodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A07A311E22568D0076B15B /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
+		08A07A321E22568D0076B15B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		08A07A591E225CA00076B15B /* Connection+HubchatAPITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Connection+HubchatAPITests.swift"; sourceTree = "<group>"; };
+		08A07A5A1E225CA00076B15B /* ConnectionManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionManagerTests.swift; sourceTree = "<group>"; };
+		08A07A5B1E225CA00076B15B /* ModelsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +104,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				084744D91E216D540059B89C /* CodeChallengeCore.framework in Frameworks */,
-				E762A70F18DB2CC2EAC316D8 /* Pods_CodeChallenge.framework in Frameworks */,
+				081D989C1E225D5400702D7C /* Alamofire.framework in Frameworks */,
+				081D989D1E225D5400702D7C /* AlamofireImage.framework in Frameworks */,
+				081D989E1E225D5400702D7C /* SwiftyJSON.framework in Frameworks */,
+				081D98971E225D5300702D7C /* PromiseKit.framework in Frameworks */,
+				081D98981E225D5300702D7C /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E724DDE07B1C7659AA804E40 /* Pods_CodeChallengeTests.framework in Frameworks */,
+				081D98A11E225E4D00702D7C /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,12 +126,10 @@
 		081B3C671E2115300086D1CE = {
 			isa = PBXGroup;
 			children = (
-				084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */,
 				081B3C721E2115300086D1CE /* CodeChallenge */,
 				081B3C871E2115310086D1CE /* CodeChallengeTests */,
 				081B3C711E2115300086D1CE /* Products */,
-				F7435C5342632582C26F1DE8 /* Pods */,
-				46AFC532AD97D0A8A6CDAFE6 /* Frameworks */,
+				08A07A2F1E22568D0076B15B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +148,7 @@
 				081B3C7A1E2115310086D1CE /* Assets.xcassets */,
 				081B3C731E2115300086D1CE /* AppDelegate.swift */,
 				08709C131E21E5B700C87563 /* Appearance.swift */,
+				08A07A461E225B760076B15B /* Core */,
 				08709C2B1E220E7D00C87563 /* Extensions */,
 				08709C1E1E21F20000C87563 /* Managers */,
 				08709C151E21E69800C87563 /* Forums */,
@@ -158,18 +161,12 @@
 			isa = PBXGroup;
 			children = (
 				081B3C881E2115310086D1CE /* CodeChallengeTests.swift */,
+				08A07A591E225CA00076B15B /* Connection+HubchatAPITests.swift */,
+				08A07A5A1E225CA00076B15B /* ConnectionManagerTests.swift */,
+				08A07A5B1E225CA00076B15B /* ModelsTests.swift */,
 				081B3C8A1E2115310086D1CE /* Info.plist */,
 			);
 			path = CodeChallengeTests;
-			sourceTree = "<group>";
-		};
-		084744CC1E216B1C0059B89C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				084744D11E216B1C0059B89C /* CodeChallengeCore.framework */,
-				084744D31E216B1C0059B89C /* CodeChallengeCoreTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		08709C151E21E69800C87563 /* Forums */ = {
@@ -226,24 +223,49 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		46AFC532AD97D0A8A6CDAFE6 /* Frameworks */ = {
+		08A07A2F1E22568D0076B15B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F79F35A56E89E0B5AD8FBC29 /* Pods_CodeChallenge.framework */,
-				ACEAE1C664334000E2F28D51 /* Pods_CodeChallengeTests.framework */,
+				081D98991E225D5400702D7C /* Alamofire.framework */,
+				081D989A1E225D5400702D7C /* AlamofireImage.framework */,
+				081D989B1E225D5400702D7C /* SwiftyJSON.framework */,
+				08A07A311E22568D0076B15B /* PromiseKit.framework */,
+				08A07A321E22568D0076B15B /* SnapKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F7435C5342632582C26F1DE8 /* Pods */ = {
+		08A07A461E225B760076B15B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				58FAA89AB434807BC03C462F /* Pods-CodeChallenge.debug.xcconfig */,
-				B79C7B90421E5F3F41ECAF4A /* Pods-CodeChallenge.release.xcconfig */,
-				92F50F54E8425D29A53AEF62 /* Pods-CodeChallengeTests.debug.xcconfig */,
-				B37DB2FA05507FE82BDAA6C5 /* Pods-CodeChallengeTests.release.xcconfig */,
+				08A07A491E225B800076B15B /* Connection */,
+				08A07A501E225B800076B15B /* Models */,
 			);
-			name = Pods;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		08A07A491E225B800076B15B /* Connection */ = {
+			isa = PBXGroup;
+			children = (
+				081D98AF1E225F0900702D7C /* Connection+HubchatAPI.swift */,
+				081D98B01E225F0900702D7C /* ConnectionManager.swift */,
+			);
+			name = Connection;
+			path = ../../CodeChallengeCore/CodeChallengeCore/Connection;
+			sourceTree = "<group>";
+		};
+		08A07A501E225B800076B15B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				081D98A31E225EFE00702D7C /* Forum.swift */,
+				081D98A41E225EFE00702D7C /* Forum+SwiftyJSON.swift */,
+				081D98A51E225EFE00702D7C /* ForumPost.swift */,
+				081D98A61E225EFE00702D7C /* ForumPost+SwiftyJSON.swift */,
+				081D98A71E225EFE00702D7C /* ForumPosts.swift */,
+				081D98A81E225EFE00702D7C /* ForumPosts+SwiftyJSON.swift */,
+			);
+			name = Models;
+			path = ../../CodeChallengeCore/CodeChallengeCore/Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,18 +275,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081B3C8D1E2115310086D1CE /* Build configuration list for PBXNativeTarget "CodeChallenge" */;
 			buildPhases = (
-				E33F28D3497BB719138DF444 /* [CP] Check Pods Manifest.lock */,
 				081B3C6C1E2115300086D1CE /* Sources */,
 				081B3C6D1E2115300086D1CE /* Frameworks */,
 				081B3C6E1E2115300086D1CE /* Resources */,
-				558B2395B747AA3A8045FD8D /* [CP] Embed Pods Frameworks */,
-				DA5CD0095EE6808E0AEA1167 /* [CP] Copy Pods Resources */,
 				084744DD1E216D540059B89C /* Embed Frameworks */,
+				08A07A351E2256A20076B15B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				084744DC1E216D540059B89C /* PBXTargetDependency */,
 			);
 			name = CodeChallenge;
 			productName = CodeChallenge;
@@ -275,12 +294,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 081B3C901E2115310086D1CE /* Build configuration list for PBXNativeTarget "CodeChallengeTests" */;
 			buildPhases = (
-				B772BE8050E27C1093EB4AF2 /* [CP] Check Pods Manifest.lock */,
 				081B3C801E2115310086D1CE /* Sources */,
 				081B3C811E2115310086D1CE /* Frameworks */,
 				081B3C821E2115310086D1CE /* Resources */,
-				9FC66DFCDAD08868F972653B /* [CP] Embed Pods Frameworks */,
-				229514041B2EC46BCD4788F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,12 +341,6 @@
 			mainGroup = 081B3C671E2115300086D1CE;
 			productRefGroup = 081B3C711E2115300086D1CE /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 084744CC1E216B1C0059B89C /* Products */;
-					ProjectRef = 084744CB1E216B1C0059B89C /* CodeChallengeCore.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				081B3C6F1E2115300086D1CE /* CodeChallenge */,
@@ -338,23 +348,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		084744D11E216B1C0059B89C /* CodeChallengeCore.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CodeChallengeCore.framework;
-			remoteRef = 084744D01E216B1C0059B89C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		084744D31E216B1C0059B89C /* CodeChallengeCoreTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CodeChallengeCoreTests.xctest;
-			remoteRef = 084744D21E216B1C0059B89C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		081B3C6E1E2115300086D1CE /* Resources */ = {
@@ -369,101 +362,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				081D98A21E225E5100702D7C /* SwiftyJSON.framework in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		229514041B2EC46BCD4788F0 /* [CP] Copy Pods Resources */ = {
+		08A07A351E2256A20076B15B /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/PromiseKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireImage.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
 			);
-			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		558B2395B747AA3A8045FD8D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FC66DFCDAD08868F972653B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B772BE8050E27C1093EB4AF2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		DA5CD0095EE6808E0AEA1167 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E33F28D3497BB719138DF444 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -477,12 +399,20 @@
 				08709C211E21F20C00C87563 /* NetworkManager.swift in Sources */,
 				08709C321E22197800C87563 /* ForumPostsViewController+UICollectionView.swift in Sources */,
 				08709C2E1E220E9600C87563 /* UIImage+Extended.swift in Sources */,
+				081D98B21E225F0900702D7C /* ConnectionManager.swift in Sources */,
+				081D98AE1E225EFE00702D7C /* ForumPosts+SwiftyJSON.swift in Sources */,
 				08709C1A1E21E6F000C87563 /* ForumHeaderView.swift in Sources */,
 				08709C1D1E21EEA300C87563 /* ForumHeaderView+Controller.swift in Sources */,
 				08709C141E21E5B700C87563 /* Appearance.swift in Sources */,
+				081D98AA1E225EFE00702D7C /* Forum+SwiftyJSON.swift in Sources */,
 				08709C251E22048900C87563 /* ForumView.swift in Sources */,
 				081B3C741E2115300086D1CE /* AppDelegate.swift in Sources */,
+				081D98AB1E225EFE00702D7C /* ForumPost.swift in Sources */,
 				08709C351E2219B300C87563 /* ForumPostsViewControllerExtended.swift in Sources */,
+				081D98B11E225F0900702D7C /* Connection+HubchatAPI.swift in Sources */,
+				081D98AD1E225EFE00702D7C /* ForumPosts.swift in Sources */,
+				081D98AC1E225EFE00702D7C /* ForumPost+SwiftyJSON.swift in Sources */,
+				081D98A91E225EFE00702D7C /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +420,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08A07A5D1E225CA00076B15B /* ConnectionManagerTests.swift in Sources */,
+				08A07A5C1E225CA00076B15B /* Connection+HubchatAPITests.swift in Sources */,
 				081B3C891E2115310086D1CE /* CodeChallengeTests.swift in Sources */,
+				08A07A5E1E225CA00076B15B /* ModelsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,17 +435,13 @@
 			target = 081B3C6F1E2115300086D1CE /* CodeChallenge */;
 			targetProxy = 081B3C851E2115310086D1CE /* PBXContainerItemProxy */;
 		};
-		084744DC1E216D540059B89C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CodeChallengeCore;
-			targetProxy = 084744DB1E216D540059B89C /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		081B3C8B1E2115310086D1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -563,6 +492,7 @@
 		081B3C8C1E2115310086D1CE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -605,11 +535,14 @@
 		};
 		081B3C8E1E2115310086D1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58FAA89AB434807BC03C462F /* Pods-CodeChallenge.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7QN6NJ95ZV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallenge;
@@ -622,11 +555,14 @@
 		};
 		081B3C8F1E2115310086D1CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B79C7B90421E5F3F41ECAF4A /* Pods-CodeChallenge.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7QN6NJ95ZV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallenge;
@@ -639,10 +575,13 @@
 		};
 		081B3C911E2115310086D1CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 92F50F54E8425D29A53AEF62 /* Pods-CodeChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeTests;
@@ -654,10 +593,13 @@
 		};
 		081B3C921E2115310086D1CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B37DB2FA05507FE82BDAA6C5 /* Pods-CodeChallengeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CodeChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.coderpug.CodeChallengeTests;

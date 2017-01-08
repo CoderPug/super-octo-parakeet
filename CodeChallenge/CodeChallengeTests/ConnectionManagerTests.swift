@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import CodeChallengeCore
+@testable import CodeChallenge
 
 class CodeChallengeCoreTests: XCTestCase {
     
