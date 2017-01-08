@@ -27,7 +27,7 @@ class CodeChallengeCoreTests: XCTestCase {
         let completionExpectation = expectation(description: "Connection performs async request")
         
         //  When
-        Connection().request(url: url) { result in
+        Connection().requestJSONResource(url: url) { result in
             
             switch result {
                 
@@ -61,7 +61,7 @@ class CodeChallengeCoreTests: XCTestCase {
         let completionExpectation = expectation(description: "Connection performs async request")
         
         //  When
-        Connection().request(url: url) { result in
+        Connection().requestJSONResource(url: url) { result in
             
             switch result {
                 
