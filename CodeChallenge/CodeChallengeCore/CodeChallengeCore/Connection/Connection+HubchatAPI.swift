@@ -14,8 +14,8 @@ struct HubchatAPI {
     
     static let server = "https://api.hubchat.com/"
     static let version = "v1"
-    static let ForumPhotographyURL = server + version + "/forum/photography"
-    static let ForumPhotographyPostsURL = server + version + "/forum/photography/post"    
+    static let forumPhotographyURL = server + version + "/forum/photography"
+    static let forumPhotographyPostsURL = server + version + "/forum/photography/post"
 }
 
 extension Connection {
@@ -25,33 +25,15 @@ extension Connection {
     /// - Parameter completion: Completion closure.
     public func requestForumInfo(completion: @escaping (Result<Forum>) -> Void) {
 
-        requestJSON(url: HubchatAPI.ForumPhotographyURL, completion: completion)
+        requestJSON(url: HubchatAPI.forumPhotographyURL, completion: completion)
     }
     
     /// Request HubchatAPI photography forum posts.
     ///
     /// - Parameter completion: Completion closure.
-    public func requestForumPosts(completion: @escaping (Result<[String: AnyObject]>) -> Void) {
+    public func requestForumPosts(completion: @escaping (Result<ForumPosts>) -> Void) {
         
-        requestJSON(url: HubchatAPI.ForumPhotographyPostsURL) { result in
-            
-            switch result {
-                
-            case let .Failure(error):
-                
-                return completion(.Failure(error))
-                
-            case let .Success(object):
-                
-                guard let object = object as? [String: AnyObject] else {
-                    
-                    return completion(.Failure(ConnectionError.responseNotJSON))
-                }
-                
-                completion(.Success(object))
-                break
-            }
-        }
+        requestJSON(url: HubchatAPI.forumPhotographyPostsURL, completion: completion)
     }
 
 }

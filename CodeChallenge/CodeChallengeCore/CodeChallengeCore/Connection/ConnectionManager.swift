@@ -45,7 +45,7 @@ public struct Connection {
     /// - Parameters:
     ///   - url: String request url.
     ///   - completion: Completion closure.
-    func requestJSON(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
+    func request(url: String, completion: @escaping (Result<AnyObject>) -> Void) {
         
         Alamofire.request(url).responseJSON { response in
             
@@ -67,7 +67,7 @@ public struct Connection {
     ///   - completion: Completion closure with generic response-type.
     func requestJSON<T: ConnectionParseable>(url: String, completion: @escaping (Result<T>) -> Void) {
         
-        requestJSON(url: url) { result in
+        request(url: url) { result in
             
             switch result {
                 
