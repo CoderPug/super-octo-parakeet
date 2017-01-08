@@ -59,8 +59,9 @@ final class ForumHeaderView: UIView {
     
     private func appareance() {
         
-        backgroundColor = Appearance.Colors.empty
+        backgroundColor = UIColor.white
         labelTitle.font = Appearance.Fonts.h1
         labelTitle.textColor = Appearance.Colors.first
     }
+    
 }
