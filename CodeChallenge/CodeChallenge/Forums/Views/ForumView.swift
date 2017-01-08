@@ -91,8 +91,8 @@ final class ForumView: UICollectionViewCell {
         
         labelImagesCounter.snp.makeConstraints { make in
         
-            make.trailing.equalTo(imageForum.snp.trailing).inset(5)
-            make.bottom.equalTo(imageForum.snp.bottom).inset(5)
+            make.trailing.equalTo(imageForum.snp.trailing).inset(7)
+            make.bottom.equalTo(imageForum.snp.bottom).inset(7)
         }
         
         //  imageUpVotes
@@ -111,8 +111,8 @@ final class ForumView: UICollectionViewCell {
         
         labelUpVotes.snp.makeConstraints { make in
         
-            make.topMargin.equalTo(imageForum.snp.bottom).offset(18)
-            make.leading.equalTo(imageUpVotes.snp.trailing).offset(10)
+            make.topMargin.equalTo(imageForum.snp.bottom).offset(19)
+            make.leading.equalTo(imageUpVotes.snp.trailing).offset(8)
         }
         
     }
