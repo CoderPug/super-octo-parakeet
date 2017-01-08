@@ -10,12 +10,12 @@ import Foundation
 
 public struct Forum: ConnectionParseable {
     
-    let id: String
-    let title: String
-    let description: String
-    let headerImageURL: String?
-    let postsCount: Int?
-    let memberCount: Int?
-    let createdAt: Date?
-    let updatedAt: Date?
+    public let id: String
+    public let title: String
+    public let description: String
+    public let headerImageURL: String?
+    public let postsCount: Int?
+    public let memberCount: Int?
+    public let createdAt: Date?
+    public let updatedAt: Date?
 }
