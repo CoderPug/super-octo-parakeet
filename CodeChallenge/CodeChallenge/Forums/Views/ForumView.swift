@@ -13,9 +13,11 @@ final class ForumView: UICollectionViewCell {
     
     var imageUserAvatar: UIImageView = UIImageView()
     var imageForum: UIImageView = UIImageView()
+    var imageUpVotes: UIImageView = UIImageView()
     var labelUserName: UILabel = UILabel()
     var labelForumText: UILabel = UILabel()
     var labelImagesCounter: UILabel = UILabel()
+    var labelUpVotes: UILabel = UILabel()
     
     override func layoutSubviews() {
         
@@ -25,6 +27,7 @@ final class ForumView: UICollectionViewCell {
     override func prepareForReuse() {
         
         labelImagesCounter.text = ""
+        labelUpVotes.text = ""
         imageForum.image = nil
     }
     
@@ -35,7 +38,8 @@ final class ForumView: UICollectionViewCell {
         appareance()
         layout()
         
-        labelForumText.numberOfLines = 2
+        imageUpVotes.image = UIImage(named: "heart")
+        labelForumText.numberOfLines = 0
         imageForum.contentMode = .scaleAspectFit
         imageForum.clipsToBounds = true
     }
@@ -67,8 +71,8 @@ final class ForumView: UICollectionViewCell {
         
         labelForumText.snp.makeConstraints { make in
             
-            make.trailing.equalTo(10)
-            make.leading.equalTo(10)
+            make.left.equalTo(10)
+            make.right.equalToSuperview().inset(20)
             make.topMargin.equalTo(50)
         }
         
@@ -90,6 +94,27 @@ final class ForumView: UICollectionViewCell {
             make.trailing.equalTo(imageForum.snp.trailing).inset(5)
             make.bottom.equalTo(imageForum.snp.bottom).inset(5)
         }
+        
+        //  imageUpVotes
+        addSubview(imageUpVotes)
+        
+        imageUpVotes.snp.makeConstraints { make in
+            
+            make.width.equalTo(25)
+            make.height.equalTo(25)
+            make.leading.equalTo(10)
+            make.topMargin.equalTo(imageForum.snp.bottom).offset(14)
+        }
+        
+        //  labelUpVotes
+        addSubview(labelUpVotes)
+        
+        labelUpVotes.snp.makeConstraints { make in
+        
+            make.topMargin.equalTo(imageForum.snp.bottom).offset(18)
+            make.leading.equalTo(imageUpVotes.snp.trailing).offset(10)
+        }
+        
     }
     
     private func appareance() {
@@ -101,6 +126,8 @@ final class ForumView: UICollectionViewCell {
         labelUserName.textColor = Appearance.Colors.second
         labelForumText.font = Appearance.Fonts.text
         labelForumText.textColor = Appearance.Colors.second
+        labelUpVotes.font = Appearance.Fonts.h4
+        labelUpVotes.textColor = Appearance.Colors.red
         imageForum.backgroundColor = UIColor.black
     }
     

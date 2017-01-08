@@ -47,9 +47,13 @@ extension ForumPostsViewController: UICollectionViewDelegate, UICollectionViewDe
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         postWidth = min(self.view.frame.size.width, ForumPostsViewController.flowLayoutMaxWidth)
+        let temporalElement = posts[indexPath.row]
+        var height = (postWidth ?? self.view.frame.size.width) + CGFloat(temporalElement.text.characters.count / 50) * 18
+        let breaklines = temporalElement.text.components(separatedBy: "\n")
+        height = height + CGFloat(breaklines.count * 18)
         
         return CGSize(width: postWidth ?? self.view.frame.size.width,
-                      height: (postWidth ?? self.view.frame.size.width) / 16 * 12 + 70 + 50)
+                      height: height / 16 * 12 + 70 + 50)
     }
     
     func collectionView(_ collectionView: UICollectionView,

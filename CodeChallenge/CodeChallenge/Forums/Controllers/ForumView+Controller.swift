@@ -24,6 +24,8 @@ extension ForumView {
             totalPhotos > 1 {
             labelImagesCounter.text = "\(totalPhotos - 1) more"
         }
+        
+        labelUpVotes.text = "\(forum.upVotes) upvotes"
     }
     
 }
