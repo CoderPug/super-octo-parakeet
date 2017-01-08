@@ -28,4 +28,5 @@ extension Forum {
         self.createdAt = nil
         self.updatedAt = nil  //updatedAt createdAt
     }
+    
 }
