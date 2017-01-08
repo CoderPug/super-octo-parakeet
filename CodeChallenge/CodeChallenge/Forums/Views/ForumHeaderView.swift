@@ -13,6 +13,7 @@ final class ForumHeaderView: UIView {
     
     var imageBackground: UIImageView = UIImageView()
     var labelTitle: UILabel = UILabel()
+    var labelDescription: UILabel = UILabel()
     var progressView: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
     
     override func layoutSubviews() {
@@ -27,6 +28,7 @@ final class ForumHeaderView: UIView {
         appareance()
         layout()
         
+        labelDescription.numberOfLines = 2
         imageBackground.contentMode = .scaleAspectFill
         imageBackground.clipsToBounds = true
     }
@@ -54,8 +56,18 @@ final class ForumHeaderView: UIView {
         
         labelTitle.snp.makeConstraints { make in
             
-            make.leading.equalTo(20)
-            make.trailing.equalTo(20)
+            make.left.equalTo(20)
+            make.right.equalToSuperview().inset(20)
+            make.topMargin.equalTo(40)
+        }
+        
+        //  labelDescription
+        addSubview(labelDescription)
+        
+        labelDescription.snp.makeConstraints { make in
+            
+            make.left.equalTo(20)
+            make.right.equalToSuperview().inset(20)
             make.topMargin.equalTo(60)
         }
     }
@@ -65,6 +77,8 @@ final class ForumHeaderView: UIView {
         backgroundColor = UIColor.white
         labelTitle.font = Appearance.Fonts.h1
         labelTitle.textColor = Appearance.Colors.first
+        labelDescription.font = Appearance.Fonts.detailText
+        labelDescription.textColor = Appearance.Colors.first
     }
     
-}
+ }
