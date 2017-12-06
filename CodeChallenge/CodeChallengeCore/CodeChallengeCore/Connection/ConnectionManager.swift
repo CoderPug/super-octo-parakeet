@@ -54,7 +54,7 @@ public struct Connection {
         
         Alamofire.request(url).responseJSON { response in
             
-//            dump(response)
+            dump(response)
             
             guard let responseJSON = response.result.value else {
                 

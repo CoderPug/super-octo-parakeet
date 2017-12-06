@@ -24,22 +24,22 @@ extension UIImageView {
         }
     }
     
-    func getPromiseImage(url: String) -> Promise<()> {
+    func getPromiseImage(url: String) -> Promise<Any?> {
         
         return Promise { fulfill, reject in
-            
+
             Network().getImage(url: url)
                 .then { [weak self] image in
-                    
+
                     self?.image = image
-                    
+
                 }.then { _ in
-                    
-                    fulfill()
-                    
+
+                    fulfill(nil)
+
                 }.catch { error in
-                    
-                    reject(error)
+
+                    _ = reject(error)
             }
         }
     }
